@@ -1,0 +1,27 @@
+{
+  "name": "uesp.net",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "tsc": "tsc",
+    "build": "rm -rf dist && npm run tsc && cp src/*.css dist",
+    "start": "concurrently \"nodemon --watch src --exec npm --ext ts,css run build\" \"nodemon --exec ts-node index.ts\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2",
+    "helmet": "^8.1.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.2"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.1",
+    "@types/node": "^22.13.10",
+    "concurrently": "^9.1.2",
+    "nodemon": "^3.1.9"
+  }
+}

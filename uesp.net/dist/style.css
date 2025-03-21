@@ -1,0 +1,94 @@
+:root {
+    --background-color-default: #222;
+    --background-color-lighter: #333;
+    --link-background-color-hover: #32c;
+    --link-color-default: #3ac;
+    --link-color-visited: #38c;
+    --text-color-default: #ddd;
+}
+
+html,
+body,
+div.pBody,
+div#content,
+div#mw-panel,
+pre,
+#mw-highlight,
+.mw-editTools,
+.editOptions,
+table,
+.menu,
+.header-container.header-chrome,
+#mw-mf-viewport {
+    color: var(--text-color-default);
+    background-color: var(--background-color-default);
+    background-image: none;
+}
+
+div.vectorTabs li.selected,
+div.thumb div,
+table.striped tr:nth-child(2n) {
+    background-color: var(--background-color-default);
+}
+
+div.quotebox, #collapsibleTable0 tbody {
+    background-color: var(--background-color-lighter);
+}
+
+table.wikitable,
+.content table.wikitable,
+#uespMainLogo,
+#uespNewsDiv,
+#uespFADiv,
+code,
+table.wikitable>*>tr>th,
+th {
+    color: var(--text-color-default);
+    background-color: var(--background-color-lighter) !important;
+}
+
+div.vectorTabs li.selected a {
+    color: var(--text-color-default);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--text-color-default);
+}
+
+a {
+    color: var(--link-color-default);
+    background-color: var(--background-color-lighter)
+}
+
+a:hover {
+    background-color: var(--link-background-color-hover);
+}
+
+a:visited {
+    color: var(--link-color-visited);
+}
+
+#catlinks,
+#toc {
+    color: var(--text-color-default);
+    background-color: var(--background-color-default);
+}
+
+@media screen {
+    div#mw-panel div.portal div.body ul li a {
+        color: var(--link-color-default);
+    }
+
+    div#mw-panel div.portal div.body ul li a:visited {
+        color: var(--link-color-visited);
+    }
+
+    .tocnumber {
+        color: var(--text-color-default);
+    }
+}
